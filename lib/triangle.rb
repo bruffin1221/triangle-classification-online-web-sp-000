@@ -22,8 +22,8 @@ def kind
     :isosceles
   elsif triangle==true && a!=b && a!=c && c!=b
     :scalene
-  else triangle==false
-    :invalid
+  else triangle!=true
+    raise TriangleError
   end
 end
 
