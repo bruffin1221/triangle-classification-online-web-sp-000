@@ -12,6 +12,7 @@ def kind(a,b,c)
   triangle=@a+@c>=@b && @b+@c>=@a && @a+@b>=@c && @a>0 && @b>0 && @c>0
   if triangle==true && @a==@b && @b==@c && @c==@a
     :equilateral
+    binding.pry
   elsif triangle==true && @b==@c && @a!=@b && @a!=@c
     :scalene
   elsif @triangle==true && @a==@c && @b!=@c && @b!=@a
