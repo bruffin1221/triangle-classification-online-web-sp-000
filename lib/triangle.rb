@@ -21,7 +21,7 @@ def kind
   elsif triangle==true && a==b && b!=c && a!=c
     :scalene
   elsif triangle==true && a!=b && a!=c && c!=b
-    :isosceles
+    :scalene
   else triangle==false
     :invalid
   end
