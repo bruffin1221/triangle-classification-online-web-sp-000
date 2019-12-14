@@ -11,7 +11,7 @@ def initialize(a, b, c)
 end
 
 def kind
-  triangle=a+c>=b && b+c>=a && a+b>=c && a>0 && b>0 && c>0
+  triangle=a+c>b && b+c>a && a+b>c && a>0 && b>0 && c>0
   if triangle==true && a==b && b==c && c==a
     :equilateral
   elsif triangle==true && b==c && a!=b && a!=c
