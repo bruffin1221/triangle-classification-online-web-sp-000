@@ -15,11 +15,11 @@ def kind
   if triangle==true && a==b && b==c && c==a
     :equilateral
   elsif triangle==true && b==c && a!=b && a!=c
-    :scalene
+    :isosceles
   elsif triangle==true && a==c && b!=c && b!=a
-    :scalene
+    :isosceles
   elsif triangle==true && a==b && b!=c && a!=c
-    :scalene
+    :isosceles
   elsif triangle==true && a!=b && a!=c && c!=b
     :scalene
   else triangle==false
